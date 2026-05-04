@@ -1,9 +1,11 @@
+import { Link } from "react-router";
+
 export default function MainNav() {
 
     return (
-        <nav className="navbar navbar-expand-lg bg-body-tertiary">
+        <nav className="navbar navbar-expand-lg bg-warning">
             <div className="container-fluid">
-                <a className="navbar-brand" href="#">Navbar</a>
+                <Link className="navbar-brand fw-bolder text-dark" href="#" to='/'>Boolean's Films</Link>
             </div>
         </nav>
     )
