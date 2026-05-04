@@ -13,7 +13,7 @@ export default function RenderCard({ movie }) {
                 <p className="card-text">Directed by: {director}</p>
                 <p className="card-text">Genre: {genre}</p>
                 <p className="card-text">Release in: {release_year}</p>
-                <Link href="#" className="btn btn-primary" to={`/movies/${id}`}>Detail</Link>
+                <Link href="#" className="btn btn-primary" to={`/movie/${id}`}>Detail</Link>
             </div>
         </div>
     )
