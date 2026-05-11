@@ -5,7 +5,7 @@ export default function RenderCard({ movie }) {
     const { id, title, director, genre, release_year, abstract, image, created_at, updated_at } = movie;
 
     return (
-        <div className="card" key={id}>
+        <div className="card h-100" key={id}>
             <img src={image} className="card-img-top" alt={title} />
             <div className="card-body bg-warning">
                 <h5 className="card-title">{title}</h5>

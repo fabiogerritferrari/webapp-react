@@ -18,11 +18,11 @@ export default function DetailPage() {
     useEffect(fetchMovie, []);
 
     return (
-        <div className="row mt-5 d-flex flex-column gap-4">
-            <div className="col">
+        <div className="row mt-5 d-flex flex-column gap-4 align-items-center">
+            <div className="col-6">
                 <RenderCard movie={movie} />
             </div>
-            <div className="col d-flex flex-column gap-2">
+            <div className="col d-flex flex-column gap-2 mb-5">
                 {movie.reviews && (movie.reviews).map((review) => {
                     return (
                         <RenderReviews review={review} key={review.id} />

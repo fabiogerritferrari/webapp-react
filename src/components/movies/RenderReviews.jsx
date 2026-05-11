@@ -1,3 +1,5 @@
+import { StarRating } from "react-flexible-star-rating";
+
 export default function RenderReviews({ review }) {
 
     const { id, movie_id, name, vote, text, created_at, updated_at } = review;
@@ -5,7 +7,7 @@ export default function RenderReviews({ review }) {
     return (
         <div className="card" key={id}>
             <div className="card-header bg-dark text-white">
-                Vote: {vote}
+                <StarRating initialRating={vote} isReadOnly='true' dimension={10} />
             </div>
             <div className="card-body bg-warning">
                 <figure>
